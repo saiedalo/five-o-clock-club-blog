@@ -1,0 +1,12 @@
+{
+  "name": "five-o-clock-club-blog",
+  "version": "1.0.0",
+  "description": "Blog for topic '5-AM-Club' without persitence database",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sai_alo",
+  "license": "ISC"
+}
