@@ -1,0 +1,10 @@
+<%- include("partials/header.ejs") %>
+<% for (var i = 0; i< plannings.length;i++) { %>
+    <ul>
+        <li>
+            <a href="/blog/<%= i %>">   <%=plannings[i].title%> </a>
+        </li>
+    </ul>
+<% } %>
+
+<%- include("partials/footer.ejs") %>

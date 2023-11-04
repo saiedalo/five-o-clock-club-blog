@@ -1,0 +1,12 @@
+
+<%- include("partials/header.ejs") %>
+
+<% for (var i = 0; i< introspectives.length;i++) { %>
+    <ul>
+        <li>
+            <a href="/blog/<%= i %>">   <%=introspectives[i].title%> </a>
+        </li>
+    </ul>
+<% } %>
+
+<%- include("partials/footer.ejs") %>

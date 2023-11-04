@@ -1,0 +1,11 @@
+
+<%- include("partials/header.ejs") %>
+<% for (var i = 0; i< workouts.length;i++) { %>
+    <ul>
+        <li>
+            <a href="/blog/<%= i %>">   <%=workouts[i].title%> </a>
+        </li>
+    </ul>
+<% } %>
+
+<%- include("partials/footer.ejs") %>

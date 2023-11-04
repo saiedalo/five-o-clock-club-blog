@@ -1,0 +1,43 @@
+
+<%- include("partials/header.ejs") %>
+
+
+<h1>The 5 O'Clock Club Blog</h1>
+
+<a href="/introspectives"> Introspectives</a>
+<a href="/meditations"> Meditations</a>
+<a href="/plannings"> Plannings</a>
+<a href="/workouts"> Workouts</a>
+
+
+<h2>Top Post: Creation Date <%= topPost.creationDate %></h2>
+<h2>Top Post: Author <%= topPost.author %></h2>
+<h2>Top Post: Title <%= topPost.title %></h2>
+<p>Top Post: Post <%= topPost.post %></p>
+<% const value=0 %>
+<% let counter=0;%>
+<% let route="/blog/"+counter;%>
+<a href=<%= route %> > Continue Reading Toppost </a>
+<% counter+=1;%>
+
+<h2>Position Two Post: Creation Date <%= positionTwoPost.creationDate %></h2>
+<h2>Position Two Post: Author <%= positionTwoPost.author %></h2>
+<h2>Position Two Post: Title <%= positionTwoPost.title %></h2>
+<p>Position Two Post: Post <%= positionTwoPost.post %></p>
+<% route="/blog/"+counter;%>
+<a href=<%= route %>> Continue Reading Post Two</a>
+<% counter+=1;%>
+
+<h2>
+  Position Three Post: Creation Date <%= positionThreePost.creationDate %>
+</h2>
+<h2>Position Three Post: Author <%= positionThreePost.author %></h2>
+<h2>Position Three Post: Title <%= positionThreePost.title %></h2>
+<p>Position Three Post: Post <%= positionThreePost.post %></p>
+<% route="/blog/"+counter;%>
+<a href=<%= route %>> Continue Reading Post Three</a>
+<% counter+=1;%>
+
+
+
+<%- include("partials/footer.ejs") %>

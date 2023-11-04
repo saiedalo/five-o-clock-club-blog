@@ -1,0 +1,18 @@
+
+<%- include("partials/header.ejs") %>
+
+
+<h1>The 5 O'Clock Club Blog</h1>
+
+<h2>Top Post: Creation Date <%= post.creationDate %></h2>
+<h2>Top Post: Author <%= post.author %></h2>
+<h2>Top Post: Title <%= post.title %></h2>
+<p>Top Post: Post <%= post.post %></p>
+
+
+
+<form action="/blog-details/1" method="get">
+    <button type="submit">Edit Post</button>
+</form>  
+
+<%- include("partials/footer.ejs") %>

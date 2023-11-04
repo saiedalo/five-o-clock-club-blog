@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs") %>
+
+
+
+<form action="/submit" method="post">
+  <label>Creation Date <%= post.creationDate %></label>
+  <input type="text"  name="creationDate" value="<%= post.creationDate %>"required />
+  <br />
+
+  <label>Author </label>
+  <input type="text"  name="author" value="<%= post.author %>" required />
+  <br />
+
+  <label>Title </label>
+  <input type="text" name="title" value="<%= post.title %>" required></textarea>
+  <br />
+
+  <label>Post</label>
+  <input type="text" name="post" value="<%= post.post %>" required></textarea>
+  <br />
+  
+  <!-- Speichern-Button -->
+  <button type="submit" name="action" value="save">Save Post</button>
+
+  <!-- Löschen-Button -->
+  <button type="submit" name="action" value="delete">Delete Post</button>
+</form>
+
+<%- include("partials/footer.ejs") %>
